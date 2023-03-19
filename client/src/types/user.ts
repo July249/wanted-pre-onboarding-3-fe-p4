@@ -1,14 +1,14 @@
-type ROLE_USER = 'user'
-type ROLE_ADMIN = 'admin'
+type ROLE_USER = 'user';
+type ROLE_ADMIN = 'admin';
 
-export const UserRole: ROLE_USER = 'user'
-export const AdminRole: ROLE_ADMIN = 'admin'
+export const UserRole: ROLE_USER = 'user';
+export const AdminRole: ROLE_ADMIN = 'admin';
 
-export type UserRole = ROLE_USER | ROLE_ADMIN
+export type UserRole = ROLE_USER | ROLE_ADMIN;
 
 export interface UserInfo {
   name: string;
-  roles: UserRole[]
+  roles: UserRole[];
 }
 
 export interface User {
@@ -19,12 +19,12 @@ export interface User {
 }
 
 export interface Item {
-  id: number // pk
+  id: number; // pk
   owner: {
-    userId: number
-  },
+    userId: number;
+  };
   content: {
-    title: string
-    body: string
-  }
+    title: string;
+    body: string;
+  };
 }

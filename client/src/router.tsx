@@ -63,11 +63,11 @@ const routerData: RouterElement[] = [
     element: <PageC />,
     withAuth: true,
   },
+  // TODO 4-1: Admin페이지를 router에 추가
   {
-    // TODO 4-1: Admin페이지를 router에 추가
     id: 5,
     path: '/admin',
-    label: '관리자페이지',
+    label: '어드민 페이지',
     element: <AdminPage />,
     withAuth: true,
     isAdminPage: true,
